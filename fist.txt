@@ -1,0 +1,15 @@
+git 操作
+1 echo # repository name>> README.md
+2 git init
+3 git add README.md
+4 git commit -m "first commit"
+5 git remote add origin git@github.com:your name/repository name.git
+6 git push -u origin master
+
+第一条命令，创建 README.md文件，并将# repository name 写入到文件 
+2,3,4前面介绍过了，关键是5,6,： 
+第五条命令，将本地仓库和你自己的远程仓库关联起来， 
+第六条命令，将本地仓库的文件推送到远程仓库 
+如果在本地有建立好的仓库，可以切换到仓库目录，执行第五第六条命令。 
+如果在创建远程仓库的时候选择了添加文件，只是没有上面的提示而已，关联过程和上面相同。 
+如果选择了添加文件，但是本地没有仓库，可以点击仓库页面右下角的 Download ZIP按钮，下载远程仓库到本地，然后切换到仓库目录，这时就不需要关联仓库了。不想点击按钮下载的话可以使用 git clone命令，格式如下
